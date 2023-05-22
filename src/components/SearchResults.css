@@ -1,0 +1,22 @@
+.search-results {
+  list-style-type: none;
+  margin: -1px 0 0 0;
+  padding: 0;
+  border: rgb(196, 195, 195) solid 1px;
+  border-top: none;
+  background-color: white;
+  position: absolute;
+  width: calc(100% - 2px);
+  z-index: 1;
+}
+
+.search-result {
+  border-top: rgb(196, 195, 195) solid 1px;
+  padding: 10px;
+  color: black;
+}
+
+.search-result__nr,
+.search-result__highlight {
+  color: rgb(151, 149, 149);
+}

@@ -5,14 +5,15 @@
   "dependencies": {
     "canned": "^0.3.13",
     "concurrently": "^6.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"canned -p 5000 ./api/\"",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"react-scripts start\" \"canned -p 5000 ./api/\"",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+    "eject": "NODE_OPTIONS=--openssl-legacy-provider react-scripts eject"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
@@ -34,9 +35,11 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.0",
-    "@testing-library/user-event": "^13.2.1",
-    "react-scripts": "^4.0.3"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "msw": "^1.2.1",
+    "react-scripts": "^4.0.3",
+    "whatwg-fetch": "^3.6.2"
   }
 }

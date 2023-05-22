@@ -1,9 +1,10 @@
+import SearchBar from './components/SearchBar';
+import './App.css';
+
 function App() {
   return (
-    <div className="App">
-      <p>
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
+    <div className="main">
+      <SearchBar />
     </div>
   );
 }
